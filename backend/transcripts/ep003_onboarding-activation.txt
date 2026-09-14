@@ -1,0 +1,51 @@
+Episode: Onboarding and Activation — How to Turn Sign-ups into Retained Users
+Guest: Hiten Shah
+Host: Lenny Rachitsky
+
+---
+
+Lenny: Hiten Shah has co-founded FYI, Crazy Egg, and KISSmetrics, and he's one of the most thoughtful people I know on activation and onboarding. Hiten, activation is one of those words that gets thrown around a lot — how do you actually define it?
+
+Hiten: I define activation as the moment a user first experiences the core value of your product. Not just signing up, not just completing a tutorial, not just clicking around — but the moment they get the thing that makes you different. The moment of true value delivery.
+
+Most teams measure the wrong thing. They measure whether users completed onboarding steps. But steps are proxies for value. What you actually want to measure is: did they experience the core value? Did they have their "aha moment"?
+
+Lenny: How do you identify what the aha moment actually is for a product?
+
+Hiten: Reverse engineering from retained users. Take your most retained, most activated users and ask: what did they do in their first session that casual users didn't? What's the action that separates the retained cohort from the churned cohort?
+
+For Twitter early on, it was following a certain number of accounts. For Slack, it was sending a certain number of messages. For Dropbox, it was putting a file in the folder. Each of these is a behavior, not just a feature interaction — and that behavior predicts retention.
+
+The challenge is that most teams never do this analysis. They have a gut instinct about what the aha moment is, but they haven't validated it quantitatively.
+
+Lenny: Once you know the aha moment, how do you optimize onboarding around it?
+
+Hiten: Ruthlessly remove everything that isn't on the critical path to the aha moment. Every step you add is another opportunity to lose a user. The best onboarding experiences are almost invisible — they guide the user to value without feeling like onboarding at all.
+
+Three principles I use:
+One: Start with the outcome, not the process. Show users what they'll be able to do, not a checklist of things to configure.
+Two: Use progressive disclosure. Don't overwhelm with features. Surface only what's needed for the first aha moment.
+Three: Personalize the path. Different user types have different jobs to be done. A 50-person startup using your tool differently than an enterprise customer — the onboarding path should reflect that.
+
+Lenny: What's the biggest mistake teams make in onboarding?
+
+Hiten: Optimizing for completion rate instead of activation rate. Those are different things. You can have 100% tutorial completion and 20% activation — because users completed the tutorial but never experienced real value.
+
+The second big mistake: thinking onboarding is a one-time thing. Onboarding is the beginning of a relationship, not a one-time funnel step. The best products have continuous onboarding — they keep introducing users to new value over weeks and months, not just in the first 5 minutes.
+
+Lenny: How do you think about the role of empty states — the blank slate a new user faces?
+
+Hiten: Empty states are one of the most underrated design opportunities. When a user first logs in and sees nothing, that's a critical fork in the road. If they don't know what to do, they'll leave. If the empty state shows them exactly what value looks like and makes it easy to get there, you can dramatically improve activation.
+
+The best empty states do three things: show an example of what the filled experience looks like, explain the value in one sentence, and provide a single clear call to action. No options, no choices — just a clear first step.
+
+Key takeaways:
+- Activation = the user's first experience of core value, not just completing steps
+- Identify the aha moment by analyzing retained vs. churned user behavior — use data
+- Remove everything not on the critical path to the aha moment
+- Measure activation rate, not tutorial completion rate — they're not the same
+- Onboarding is continuous, not a one-time funnel — keep introducing users to value
+
+---
+
+Transcript end. Episode 003.

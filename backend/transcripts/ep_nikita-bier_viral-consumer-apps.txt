@@ -1,0 +1,57 @@
+Episode: How to Build Viral Consumer Apps
+Guest: Nikita Bier
+Host: Lenny Rachitsky
+Publish Date: 2023-04-06
+Source: Lenny's Podcast (ChatPRD/lennys-podcast-transcripts, public archive)
+
+---
+
+Lenny: Today I'm talking with Nikita Bier. Nikita has built, launched and helped get more apps to the top of the app store than any human I've ever come across. He sold his first big hit tbh to Facebook for over $30 million. He sold his second big app Gas to Discord for many millions more.
+
+Nikita: I'm honored to be on a product management podcast for a person who doesn't believe product management is real.
+
+Lenny: You launched tbh, went viral, you end up selling it to Facebook. What was the insight that helped you come up with this is a big idea that we should try?
+
+Nikita: I looked on the App Store and the number one app in the United States was an app called Sarahah, but the entire app was in Arabic. That was the strongest signal you could ever have that people want something. The concept of latent demand — where people are trying to obtain a particular value and going through a very distortive process to obtain that value. If you can actually crystallize what their motivation is, you can have this kind of intense adoption.
+
+Lenny: How do you find product-market fit for a consumer app?
+
+Nikita: If your product's working, you'll know. If there's any uncertainty, it's not working. It's a binary when it comes to consumer products. People will be fighting to get into it. Our metric was hourly actives per day — not daily active users, hourly active users. You'll know it when you see it.
+
+Lenny: What's the most important thing to get right when building consumer apps?
+
+Nikita: Develop a reproducible testing process. That will influence the probability of your success more than anything. Focus on your process for taking many shots at bat — that's what actually reduces risk. We built 15 apps over four or five years, and we got very good at testing. The most important thing I often instruct teams to do is figure out a way to eliminate all confounding variables so you can know immediately whether something's working or not.
+
+On the testing approach: we would try to get an entire school to adopt, just to know if everyone had 10 friends, would they actually derive value from this app? You never want to walk away from an experiment saying "maybe the execution was bad."
+
+Lenny: What's your advice on sequencing validation?
+
+Nikita: If this is true, then what next needs to be true for this thing to work out? These layers of conditional statements. Execute at 100% for the thing you're trying to validate at that specific stage of the product development cycle. Then you can half-ass the rest just to get 100% signal on that one part. We made the polling experience perfect first. Then the next stage was getting sharing and virality working. Compartmentalizing those things prevents scope creep.
+
+Lenny: How do you think about growth for consumer apps?
+
+Nikita: Adults don't really invite people to new apps. As a user got older from age 13 to 18, the number of people that they invite to an app just declines almost exponentially. If you're building a product with network effects, you want to be on that upward curve of adding connections to your social graph. For teens, they see each other every day — that is so critical.
+
+If your users aren't inviting people to your app, you're going to have to find another way to acquire them, and that most likely means ads. If you're targeting adults, you're going to have to raise a huge amount of venture capital to finance that user acquisition pipeline.
+
+Lenny: Talk about getting to the aha moment.
+
+Nikita: In 2024, people's attention spans are like three seconds. If you can't demonstrate value in the first three seconds, it's over. Inverting time to value so that the user experience IS the aha moment in seconds. You need to understand every possible API and how it can be used in non-traditional ways. A lot of founders say "they can just exchange usernames." That means typing 10,000 taps to build a 50-person friend list. We're looking at 10,000 taps versus one tap.
+
+Lenny: What's the key to running a great product team when you're in hypergrowth?
+
+Nikita: Everything breaks. Everything you built needs to be substituted almost every three days. You have to be ruthless with prioritization — put out the largest fires first. Also, put live chat customer support in your app 24 hours a day. It sounds insane, but it's the best vehicle for getting feedback and doing user research because users will literally tell you the problem they're having.
+
+Nikita: Products live and die in the pixels. As a founder, you should be designing the hierarchy, the pixels, the flows — everything. That's on you. At a large company, PMs are mainly writing documents and being the team secretary. At a startup, you are the product.
+
+Key takeaways:
+- Look for latent demand: people going through distortive processes to get value they want
+- Reproducible testing process matters more than individual insight
+- Validate one hypothesis at a time, execute at 100% for what you're testing
+- Time to value must be seconds, not minutes — get to the aha moment fast
+- For network-effect apps, target audiences with high urgency to communicate
+- If your product is working, you'll know — PMF is binary for consumer apps
+- Products live and die in the pixels; get into the design yourself
+
+---
+Source: Lenny's Podcast public transcript archive (ChatPRD/lennys-podcast-transcripts)

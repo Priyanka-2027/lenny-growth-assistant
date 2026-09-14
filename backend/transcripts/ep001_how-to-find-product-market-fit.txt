@@ -1,0 +1,39 @@
+Episode: How to Find Product-Market Fit
+Guest: Lenny Rachitsky
+Host: Lenny Rachitsky
+
+---
+
+Lenny: Today I want to talk about product-market fit — arguably the most important concept in building a startup. I've spoken with hundreds of founders and PMs over the years, and the pattern is always the same: before product-market fit, everything feels like you're pushing a boulder uphill. After product-market fit, the boulder starts rolling on its own.
+
+The classic definition from Marc Andreessen: "Product-market fit means being in a good market with a product that can satisfy that market." But that's almost useless in practice. How do you know if you have it? How do you know how close you are?
+
+Here's what I've learned from the best founders: product-market fit is not a single moment. It's a spectrum. And there are concrete signals.
+
+Signal 1: Retention curves flatten
+The single best quantitative indicator. If you plot retention over time and the curve flattens — even at a low absolute number — that's a strong signal that some users have found the product valuable enough to keep coming back. A curve that keeps declining to zero means you don't have it yet.
+
+Signal 2: Organic growth
+When people start sharing your product without being asked, when you see word-of-mouth taking hold, when you notice signups coming from sources you didn't create — those are green shoots of product-market fit. Sean Ellis famously asked: "How would you feel if you could no longer use this product?" If 40% or more say "very disappointed," you're in the zone.
+
+Signal 3: The pull feeling
+This one is qualitative but unmistakable. Founders who've found product-market fit describe it as the market pulling them forward. Customers are asking for features before you've thought of them. Sales cycles shorten. Your team starts getting pinged by inbound. It feels different from pushing.
+
+Lenny: I also want to bust a myth: product-market fit doesn't mean you've found it forever. Markets change. Competition intensifies. What got you to fit can lose fit. Notion had to rebuild their positioning multiple times. Slack went through multiple pivots before they discovered the product that clicked.
+
+The best advice I can give: talk to your users obsessively. Not to validate your assumptions, but to genuinely understand their world. The founders who find PMF fastest are the ones who listen more than they pitch. They're detective-mode, not sales-mode.
+
+One framework that's helped me: the "job to be done" lens. Users don't buy products — they hire them to do a job. When you understand the job intimately — including the emotional and social dimensions, not just functional ones — you can design something that gets hired reliably.
+
+Another thing I hear consistently from founders post-PMF: they found it by narrowing, not expanding. They picked a very specific segment, went deep, made those users love the product, and then expanded from that beachhead. The temptation is to be everything to everyone. The path to PMF is being everything to someone.
+
+Key takeaways:
+- Watch your retention curves — a flattening curve is your most honest signal
+- Use the Sean Ellis test (40% "very disappointed" threshold) for qualitative validation
+- Narrow your focus before you expand — depth before breadth
+- Feel the pull: real PMF has a gravitational quality you'll recognize
+- Keep re-earning it — PMF is not permanent
+
+---
+
+Transcript end. Episode 001.
