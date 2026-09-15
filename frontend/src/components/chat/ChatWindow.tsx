@@ -261,7 +261,10 @@ export const ChatWindow: React.FC<ChatWindowProps> = ({ sessionId, modelLabel })
               border: '1px solid var(--border)',
               borderRadius: 'var(--radius-lg)',
               padding: '10px 12px',
+              boxShadow: '0 0 20px rgba(124,58,237,0.08)',
+              transition: 'border-color 0.15s, box-shadow 0.15s',
             }}
+            onFocus={() => {}}
           >
             <label htmlFor="chat-input" className="sr-only">
               Message
@@ -296,19 +299,22 @@ export const ChatWindow: React.FC<ChatWindowProps> = ({ sessionId, modelLabel })
               disabled={sending || !input.trim()}
               aria-label="Send message"
               style={{
-                background: sending || !input.trim() ? 'var(--bg-hover)' : 'var(--accent)',
+                background: sending || !input.trim()
+                  ? 'var(--bg-hover)'
+                  : 'linear-gradient(135deg, #7c3aed, #ec4899)',
                 border: 'none',
                 borderRadius: 8,
                 cursor: sending || !input.trim() ? 'not-allowed' : 'pointer',
-                color: sending || !input.trim() ? 'var(--text-muted)' : '#000',
+                color: '#fff',
                 width: 36,
                 height: 36,
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
                 flexShrink: 0,
-                transition: 'background 0.15s',
+                transition: 'all 0.15s',
                 fontSize: 16,
+                boxShadow: sending || !input.trim() ? 'none' : '0 4px 14px rgba(124,58,237,0.4)',
               }}
             >
               {sending ? <Spinner size={14} color="#fff" /> : '↑'}

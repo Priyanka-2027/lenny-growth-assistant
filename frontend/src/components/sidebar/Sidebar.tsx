@@ -61,7 +61,13 @@ export const Sidebar: React.FC<SidebarProps> = ({
       >
         <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 12 }}>
           <span style={{ fontSize: 20 }} aria-hidden="true">🎙️</span>
-          <span style={{ fontWeight: 700, fontSize: 14, color: 'var(--text-primary)', letterSpacing: 0.2 }}>
+          <span style={{
+            fontWeight: 700, fontSize: 14, letterSpacing: 0.2,
+            background: 'linear-gradient(135deg, #a78bfa, #f472b6)',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+            backgroundClip: 'text',
+          }}>
             Lenny Growth
           </span>
         </div>
@@ -70,8 +76,8 @@ export const Sidebar: React.FC<SidebarProps> = ({
           style={{
             width: '100%',
             padding: '8px 12px',
-            background: 'var(--accent)',
-            color: '#000',
+            background: 'linear-gradient(135deg, #7c3aed, #ec4899)',
+            color: '#fff',
             border: 'none',
             borderRadius: 'var(--radius-md)',
             cursor: 'pointer',
@@ -82,6 +88,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
             justifyContent: 'center',
             gap: 6,
             transition: 'opacity 0.15s',
+            boxShadow: '0 4px 15px rgba(124,58,237,0.4)',
           }}
           onMouseEnter={e => (e.currentTarget.style.opacity = '0.88')}
           onMouseLeave={e => (e.currentTarget.style.opacity = '1')}

@@ -38,14 +38,15 @@ export const MessageBubble: React.FC<MessageBubbleProps> = ({ message }) => {
             width: 32,
             height: 32,
             borderRadius: '50%',
-            background: 'var(--accent-subtle)',
-            border: '1px solid rgba(245,166,35,0.3)',
+            background: 'linear-gradient(135deg, #7c3aed, #ec4899)',
+            border: '1px solid rgba(167,139,250,0.4)',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
             fontSize: 15,
             flexShrink: 0,
             marginTop: 2,
+            boxShadow: '0 0 12px rgba(124,58,237,0.4)',
           }}
         >
           🎙️
@@ -60,12 +61,16 @@ export const MessageBubble: React.FC<MessageBubbleProps> = ({ message }) => {
               style={{
                 fontSize: 10,
                 fontWeight: 600,
-                color: 'var(--accent)',
-                background: 'var(--accent-subtle)',
-                border: '1px solid rgba(245,166,35,0.2)',
+                color: '#fff',
+                background: message.skill_used === 'ship30'
+                  ? 'linear-gradient(135deg, #7c3aed, #ec4899)'
+                  : message.skill_used === 'artifact_html'
+                  ? 'linear-gradient(135deg, #f59e0b, #f97316)'
+                  : 'linear-gradient(135deg, #34d399, #059669)',
                 borderRadius: 10,
                 padding: '2px 8px',
                 letterSpacing: 0.3,
+                boxShadow: '0 2px 8px rgba(0,0,0,0.3)',
               }}
             >
               {SKILL_LABELS[message.skill_used]}
@@ -80,11 +85,16 @@ export const MessageBubble: React.FC<MessageBubbleProps> = ({ message }) => {
             borderRadius: isUser
               ? 'var(--radius-lg) var(--radius-lg) var(--radius-sm) var(--radius-lg)'
               : 'var(--radius-lg) var(--radius-lg) var(--radius-lg) var(--radius-sm)',
-            background: isUser ? 'var(--user-bubble)' : 'var(--asst-bubble)',
-            border: `1px solid ${isUser ? 'var(--user-border)' : 'var(--border)'}`,
+            background: isUser
+              ? 'linear-gradient(135deg, #1e1b4b, #312e81)'
+              : 'var(--asst-bubble)',
+            border: isUser
+              ? '1px solid rgba(99,102,241,0.4)'
+              : '1px solid var(--border)',
             color: 'var(--text-primary)',
             fontSize: 14,
             lineHeight: 1.65,
+            boxShadow: isUser ? '0 4px 15px rgba(99,102,241,0.2)' : 'none',
           }}
         >
           {isStreaming ? (

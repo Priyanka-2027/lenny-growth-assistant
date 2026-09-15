@@ -113,8 +113,10 @@ export default function App() {
             alignItems: 'center',
             justifyContent: 'space-between',
             padding: '0 20px',
-            background: 'var(--bg-surface)',
+            background: 'linear-gradient(90deg, rgba(19,19,42,0.95), rgba(13,13,26,0.95))',
+            backdropFilter: 'blur(10px)',
             flexShrink: 0,
+            boxShadow: '0 1px 20px rgba(124,58,237,0.1)',
           }}
         >
           <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
@@ -122,11 +124,14 @@ export default function App() {
               style={{
                 fontSize: 15,
                 fontWeight: 700,
-                color: 'var(--text-primary)',
                 letterSpacing: 0.2,
+                background: 'linear-gradient(135deg, #a78bfa, #f472b6, #38bdf8)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text',
               }}
             >
-              Lenny Growth Assistant
+              🎙️ Lenny Growth Assistant
             </h1>
             {activeSessionId && (
               <span style={{ color: 'var(--text-muted)', fontSize: 13 }}>
