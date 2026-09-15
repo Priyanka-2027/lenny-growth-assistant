@@ -7,7 +7,6 @@
 [![React](https://img.shields.io/badge/React-18-61DAFB)](https://react.dev)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.115-009688)](https://fastapi.tiangolo.com)
 [![Ollama](https://img.shields.io/badge/Ollama-Local%20LLM-black)](https://ollama.com)
-
 ---
 
 ## 🎬 Demo Video
