@@ -189,88 +189,47 @@ Interactive API docs: **http://localhost:8000/docs**
 
 ## 🚀 Quick Start
 
-### Prerequisites
+> 📖 **For the complete step-by-step guide, see [SETUP.md](SETUP.md)**
 
-| Tool | Version | Required for |
-|------|---------|-------------|
-| Python | 3.11+ | Backend |
-| Node.js | 20+ | Frontend |
-| Ollama | latest | Local LLM |
-| Git | any | Cloning |
-
-### 1. Clone the repository
+### TL;DR (for experienced developers)
 
 ```bash
+# 1. Clone
 git clone https://github.com/Priyanka-2027/lenny-growth-assistant.git
 cd lenny-growth-assistant
-```
 
-### 2. Configure environment
-
-```bash
+# 2. Configure (SQLite + Ollama by default — no database setup needed)
 cp .env.example .env
-```
 
-Open `.env` and set your preferences. Minimum required for local demo:
-```bash
-LLM_PROVIDER=ollama          # use local Ollama
-OLLAMA_MODEL=llama3.2        # model to use
-DATABASE_URL=sqlite+aiosqlite:///./lenny_demo.db   # local SQLite
-```
+# 3. Pull the LLM model (~2GB)
+ollama serve          # terminal 1 — keep running
+ollama pull llama3.2  # terminal 2
 
-### 3. Install and start Ollama
-
-Download from [ollama.com/download](https://ollama.com/download), then:
-
-```bash
-ollama serve          # start Ollama server
-ollama pull llama3.2  # download the model (~2GB)
-```
-
-### 4. Start the backend
-
-```bash
+# 4. Backend (use Python 3.11 specifically)
 cd backend
-
-# Create virtual environment
-python -m venv .venv
-
-# Activate it
-# Windows:
-.venv\Scripts\activate
-# Mac/Linux:
-source .venv/bin/activate
-
-# Install dependencies
+py -3.11 -m venv .venv        # Windows
+# python3.11 -m venv .venv    # Mac/Linux
+.venv\Scripts\activate         # Windows
+# source .venv/bin/activate    # Mac/Linux
 pip install -r requirements.txt
+cp ../.env .env
+python run.py                  # terminal 2
 
-# Start the server
-python run.py
-```
-
-You should see: `Uvicorn running on http://0.0.0.0:8000`
-
-### 5. Index transcripts (one time)
-
-```bash
-# Windows PowerShell:
+# 5. Index transcripts (run once)
+# Windows:
 Invoke-WebRequest -Uri http://localhost:8000/api/v1/ingest -Method POST
-
 # Mac/Linux:
-curl -X POST http://localhost:8000/api/v1/ingest
-```
+# curl -X POST http://localhost:8000/api/v1/ingest
 
-### 6. Start the frontend
-
-```bash
-cd frontend
+# 6. Frontend
+cd ../frontend
 npm install
-npm run dev
+npm run dev                    # terminal 3
+
+# 7. Open http://localhost:5173
 ```
 
-### 7. Open the app
-
-Go to **http://localhost:5173** in your browser. 🎉
+**Having issues?** See the [Troubleshooting section in SETUP.md](SETUP.md#troubleshooting)
 
 ---
 
