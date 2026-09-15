@@ -71,7 +71,7 @@ class Settings(BaseSettings):
     chunk_overlap: int = 100
 
     # ── Timeouts ─────────────────────────────────────────────────────────────
-    llm_timeout_seconds: int = 120
+    llm_timeout_seconds: int = 300
 
 
 @lru_cache
