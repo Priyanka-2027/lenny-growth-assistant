@@ -10,12 +10,26 @@ from app.core.logging import get_logger
 logger = get_logger(__name__)
 settings = get_settings()
 
+from sqlalchemy import event
+from sqlalchemy.pool import StaticPool
+
+def _get_engine_kwargs(url: str) -> dict:
+    """Return engine kwargs appropriate for the database dialect."""
+    if url.startswith("sqlite"):
+        return {
+            "connect_args": {"check_same_thread": False},
+            "poolclass": StaticPool,
+        }
+    return {
+        "pool_pre_ping": True,
+        "pool_size": 10,
+        "max_overflow": 20,
+    }
+
 engine = create_async_engine(
     settings.database_url,
     echo=settings.app_env == "development",
-    pool_pre_ping=True,
-    pool_size=10,
-    max_overflow=20,
+    **_get_engine_kwargs(settings.database_url),
 )
 
 AsyncSessionLocal = async_sessionmaker(

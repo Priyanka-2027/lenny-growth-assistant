@@ -7,7 +7,6 @@ python-multipart==0.0.12
 sqlalchemy[asyncio]==2.0.35
 asyncpg==0.29.0
 alembic==1.13.3
-psycopg2-binary==2.9.9
 
 # Validation
 pydantic==2.9.2
@@ -24,7 +23,6 @@ sentence-transformers==3.1.1
 
 # Text processing / RAG
 langchain-text-splitters==0.3.0
-tiktoken==0.7.0
 
 # Logging
 structlog==24.4.0

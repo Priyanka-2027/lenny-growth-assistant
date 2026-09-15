@@ -27,8 +27,12 @@ async def lifespan(app: FastAPI):
         provider=settings.llm_provider,
         model=settings.active_model_name,
     )
-    await init_db()
-    logger.info("database_ready")
+    try:
+        await init_db()
+        logger.info("database_ready")
+    except Exception as exc:
+        logger.warning("database_unavailable_continuing", error=str(exc))
+        logger.warning("some_features_disabled_no_db")
     yield
     logger.info("shutting_down")
 

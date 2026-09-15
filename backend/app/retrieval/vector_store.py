@@ -4,8 +4,6 @@ Uses sentence-transformers for local embeddings — no API key required.
 """
 from __future__ import annotations
 
-from functools import lru_cache
-
 import chromadb
 from chromadb.config import Settings as ChromaSettings
 from sentence_transformers import SentenceTransformer
@@ -93,7 +91,12 @@ class VectorStore:
         logger.warning("vector_store_reset")
 
 
-@lru_cache(maxsize=1)
+_vector_store_instance: VectorStore | None = None
+
+
 def get_vector_store(settings: Settings) -> VectorStore:
     """Singleton vector store — shared across all requests."""
-    return VectorStore(settings)
+    global _vector_store_instance
+    if _vector_store_instance is None:
+        _vector_store_instance = VectorStore(settings)
+    return _vector_store_instance
